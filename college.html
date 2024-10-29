@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="image/IMG-0031.JPG" alt="1" />
+          <h1>Neri</h1>
+          <div class="details">
+            <h2>Neri</h2>
+            <p>While waiting the event, we take a picture first :D</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/IMG-0032.JPG" alt="2" />
+          <h1>Sison</h1>
+          <div class="details">
+            <h2>Sison</h2>
+            <p>We take a picture at CityMall for our day in Social Media</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/IMG-0072.JPG" alt="3" />
+          <h1>Libosada</h1>
+          <div class="details">
+            <h2>Libosada</h2>
+            <p>After the event, we decided to go to Tambayan to continue our joy and happiness</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="image/IMG-0094.JPG" alt="4" />
+          <h1>Villarin</h1>
+          <div class="details">
+            <h2>Villarin</h2>
+            <p>We decided to take a picture here for evidence to our teachers that we attending the events </p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/IMG-0097.JPG" alt="5" />
+          <h1>Benigay</h1>
+          <div class="details">
+            <h2>Benigay</h2>
+            <p>The Event was amazing and beautiful</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/IMG-0069.JPG" alt="6" />
+          <h1>Domen</h1>
+          <div class="details">
+            <h2>Domen</h2>
+            <p>We plan to go to Tambayan for celebrating the birthday of sison</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/IMG-0093.JPG" alt="7" />
+          <h1>Delos Santos</h1>
+          <div class="details">
+            <h2>dakes</h2>
+            <p>This pictures was only an attendance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
